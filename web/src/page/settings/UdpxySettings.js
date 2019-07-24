@@ -24,31 +24,33 @@ function UdpxySettings({ form }) {
       if (!error) {
         updateUdpxySettings({
           addr: (form.getFieldValue('enable') && form.getFieldValue('addr')) || null
-        }).then(() => message.success('保存成功'), () => message.error('保存失败'));
+        }).then(() => message.success('Successfully saved'), () => message.error('Save failed
+'));
       }
     })
   }
 
   return (
     <Form {...formItemLayout} onSubmit={handleSubmit}>
-      <Form.Item label="开启">
+      <Form.Item label="Open">
         {getFieldDecorator('enable', {
           rules: [{
             required: true,
-            message: '请选择'
+            message: 'Please Choose'
           }]
         })(
           <Radio.Group>
-            <Radio value={true}>是</Radio>
-            <Radio value={false}>否</Radio>
+            <Radio value={true}>Yes</Radio>
+            <Radio value={false}>No</Radio>
           </Radio.Group>
         )}
       </Form.Item>
-      <Form.Item label="地址">
+      <Form.Item label="Address">
         {getFieldDecorator('addr', {
           rules: [{
             required: getFieldValue('enable') === true,
-            message: '地址不能为空'
+            message: 'Address cannot be empty
+'
           }]
         })(
           <Input placeholder="192.168.1.254:1212" disabled={!getFieldValue('enable')} />
@@ -56,7 +58,7 @@ function UdpxySettings({ form }) {
       </Form.Item>
       <Form.Item wrapperCol={{ span: 2, offset: 2 }}>
         <Button type="primary" htmlType="submit">
-          保存
+          Preservation
           </Button>
       </Form.Item>
     </Form>
