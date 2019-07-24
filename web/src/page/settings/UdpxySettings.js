@@ -24,8 +24,7 @@ function UdpxySettings({ form }) {
       if (!error) {
         updateUdpxySettings({
           addr: (form.getFieldValue('enable') && form.getFieldValue('addr')) || null
-        }).then(() => message.success('Successfully saved'), () => message.error('Save failed
-'));
+        }).then(() => message.success('Successfully saved'), () => message.error('Save failed'));
       }
     })
   }
