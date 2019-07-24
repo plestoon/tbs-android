@@ -11,9 +11,9 @@ function PlaylistSettings() {
         console.log(info.file, info.fileList);
       }
       if (info.file.status === 'done') {
-        message.success('上传成功');
+        message.success('Upload Success');
       } else if (info.file.status === 'error') {
-        message.error('上传失败, 请检查文件格式是否正确');
+        message.error('Upload Failed, Please check if the file format is correct');
       }
     },
   };
@@ -22,7 +22,7 @@ function PlaylistSettings() {
     <div style={{ padding: '20px' }}>
       <Upload {...props}>
         <Button>
-          <Icon type="upload" />点击上传频道列表
+          <Icon type="upload" />Click to upload channel list
         </Button>
       </Upload>
     </div>
