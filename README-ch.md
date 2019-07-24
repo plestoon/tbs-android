@@ -1,20 +1,20 @@
-### [中文](https://github.com/plestoon/tbs-android) | 英文
+### 中文 | [English](https://github.com/plestoon/tbs-android/blob/master/README-en.md)
 
-# TBS IPTV player for Android devices, based on libvlc.
+# 土拨鼠影音，IPTV播放器。基于libvlc。
 
-[official site](http://www.turboshow.cn) (Chinese)
+[官网](http://www.turboshow.cn)
 
-[Downloads](https://github.com/plestoon/tbs-android/releases)
+[下载](https://github.com/plestoon/tbs-android/releases)
 
 ![](http://www.turboshow.cn/assets/screenshot.png)
-## Configuration
-### web interface
-`http://{yourAppHostIp}:1212`
+## 设置
+### web界面
+`http://{app所在设备IP}:1212`
 
-Currently the web interface is only in Chinese.
+### Web API
+#### 导入播放列表
+注：请自行抓包制作播放列表，或者网上找
 
-### web api
-#### Import TV channels
 `POST http://{yourAppHostIp}:1212/api/settings/playlist`
 
 body
@@ -33,7 +33,7 @@ body
 ```
 
 #### udpxy
-By default the player uses the rtp protocol. udpxy can be enabled to use http.
+播放器默认使用rtp协议，如路由器支持udpxy，可设置相应地址进行加速.
 
 `POST http://{yourAppHostIp}:1212/api/settings/udpxy`
 
@@ -50,7 +50,7 @@ To disable it, POST
 }
 ```
 
-## Build web interface
+## build内置web界面
 `$ cd web`
 
 `$ yarn build`

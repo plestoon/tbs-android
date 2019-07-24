@@ -21,7 +21,7 @@ function SettingsLayout({ location }) {
           selectedKeys={[activeMenuItem]}
           style={{ height: '100%', paddingTop: '20px', borderRight: '1px solid #e8e8e8' }}
         >
-          <Menu.Item key="playlist"><NavLink to="/settings/playlist">播放列表</NavLink></Menu.Item>
+          <Menu.Item key="playlist"><NavLink to="/settings/playlist">Playlist</NavLink></Menu.Item>
           <Menu.Item key="udpxy"><NavLink to="/settings/udpxy">udpxy</NavLink></Menu.Item>
         </Menu>
       </Sider>
