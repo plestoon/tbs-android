@@ -48,9 +48,7 @@ function UdpxySettings({ form }) {
         {getFieldDecorator('addr', {
           rules: [{
             required: getFieldValue('enable') === true,
-            message: 'Address cannot be empty
-'
-          }]
+            message: 'Address cannot be empty'          }]
         })(
           <Input placeholder="192.168.1.254:1212" disabled={!getFieldValue('enable')} />
         )}
