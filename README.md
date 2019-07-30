@@ -2,6 +2,8 @@
 
 # TBS IPTV player for Android devices, based on libvlc.
 
+## This project has been transfered to https://github.com/turboshow/tbs-tv-android.git
+
 [official site](http://www.turboshow.cn) (Chinese)
 
 [Downloads](https://github.com/plestoon/tbs-android/releases)
